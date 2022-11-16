@@ -4,7 +4,7 @@
 
   <!-- SITE INFO -->
   <arg name="site_name" default="riseholme"/>
-  <arg name="datum_file" default="$(find thorvald_uv_bringup)/config/site_files/riseholme/trialsite/datum.yaml"/>
+  <arg name="datum_file" default="$(find thorvald_launch)/config/site_files/riseholme/trialsite/datum.yaml"/>
 
   <arg name="gps_error_mask_std" default="0.2"/>
 
