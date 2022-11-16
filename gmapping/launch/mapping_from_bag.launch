@@ -4,7 +4,7 @@
 
   <!-- SITE INFO -->
   <arg name="site_name" default="riseholme"/>
-  <arg name="datum_file" default="$(find thorvald_launch)/config/site_files/riseholme/trialsite/datum.yaml"/>
+  <arg name="datum_file" default="$(find thorvald_launch)/config/site_files/riseholme/trial_site/datum.yaml"/>
 
   <arg name="gps_error_mask_std" default="0.2"/>
 
@@ -35,7 +35,7 @@
 
   <!-- rviz -->
   <node pkg="rviz" type="rviz" name="rviz"
-        args="-d $(find rasberry_bringup)/resources/row_traversal_action.rviz"/>
+        args="-d $(find thorvald_launch)/resources/row_traversal_action.rviz"/>
 
   <!-- mapviz -->
   <!-- <include file="$(find mel_amcl)/launch/mapviz.launch">
@@ -43,7 +43,7 @@
   </include> -->
 
     <!-- scan merger -->
-  <!-- <include file="$(find rasberry_bringup)/launch/corner_lasers_merger.launch" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' ">
+  <!-- <include file="$(find thorvald_core)/launch/corner_lasers_merger.launch" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' ">
     <arg name="laserscan_topics" value="/scanner_front/scan scanner_back/scan" />
   </include> -->
 
